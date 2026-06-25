@@ -1,13 +1,76 @@
-# Python-generated files
+# =========================
+# Python
+# =========================
 __pycache__/
-*.py[oc]
+*.py[cod]
+*.pyo
+*.pyd
+
+# build / packaging
 build/
 dist/
 wheels/
-*.egg-info
+*.egg-info/
+.eggs/
 
-# Virtual environments
-.venv
+# virtual environments
+.venv/
+venv/
+ENV/
+env/
 
-#pytest
+# pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# pytest
 .pytest_cache/
+.coverage
+htmlcov/
+
+# mypy / type checkers
+.mypy_cache/
+.dmypy.json
+
+# =========================
+# Jupyter Notebook
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+
+# =========================
+# OS (macOS / Windows)
+# =========================
+.DS_Store
+.localized
+Thumbs.db
+
+# =========================
+# IDEs
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Data files (optional - common in analytics projects)
+# =========================
+data/raw/
+data/processed/
+*.csv
+*.parquet
+*.json
+
+# but keep structure files
+!data/.gitkeep
