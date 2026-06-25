@@ -1,0 +1,21 @@
+[project]
+name = "movie-market-analytics-v2"
+version = "0.2.0"
+description = "End-to-end movie market analytics project with ETL, MySQL dimensional model, Flask API, analysis, visualization, and tests."
+requires-python = ">=3.10"
+dependencies = [
+  "Flask>=3.0.0",
+  "pandas>=2.0.0",
+  "PyMySQL>=1.1.0",
+  "python-dotenv>=1.0.0",
+  "matplotlib>=3.8.0",
+  "joblib>=1.5.3",
+  "scikit-learn>=1.2.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
